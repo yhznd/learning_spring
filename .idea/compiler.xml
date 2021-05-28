@@ -8,16 +8,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="room-web-app" />
         <module name="learning_spring_web" />
+        <module name="room-clr" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="learning_spring_web" target="11" />
+      <module name="room-clr" target="11" />
       <module name="room-web-app" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="learning_spring_web" options="-parameters" />
+      <module name="room-clr" options="-parameters" />
       <module name="room-web-app" options="-parameters" />
     </option>
   </component>
