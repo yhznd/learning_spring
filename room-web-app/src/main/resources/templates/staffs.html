@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymelaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Landon Hotel | Staffs</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Staff First Name</th>
+            <th>Staff Last Name</th>
+            <th>Staff Position</th>
+        </tr>
+        <tr th:each="staff:${staffs}">
+            <td th:text="${staff.firstName}">First Name</td>
+            <td th:text="${staff.lastName}">Last Name</td>
+            <td th:text="${staff.position}">Position</td>
+        </tr>
+    </table>
+</body>
+</html>

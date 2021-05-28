@@ -1,0 +1,11 @@
+spring:
+  profiles: dev
+server:
+  port: 8080
+---
+spring:
+  profiles: test
+server:
+  port: 9000
+
+##if we set prod in the configuration, it will be run in 8080 which is default
