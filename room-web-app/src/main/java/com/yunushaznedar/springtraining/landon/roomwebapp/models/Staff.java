@@ -1,27 +1,48 @@
-package com.yunushaznedar.springtraining.landon.roomwebapp.roomwebapp.models;
+package com.yunushaznedar.springtraining.landon.roomwebapp.models;
 
+import javax.persistence.*;
+import java.util.UUID;
+
+@Entity
+@Table(name = "EMPLOYEE")
 public class Staff
 {
-    private long id;
+
+    @Id
+    @Column(name = "EMPLOYEE_ID")
+    private String id;
+
+    @Column(name = "FIRST_NAME")
     private String firstName;
+    @Column(name = "LAST_NAME")
     private String lastName;
+
+    @Column(name = "POSITION")
     private String position;
+
 
     public Staff() {
     }
 
-    public Staff(long id, String firstName, String lastName, String position) {
+    public Staff(String id)
+    {
+        this.id= UUID.randomUUID().toString();
+    }
+
+    public Staff(String id, String firstName, String lastName, String position) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.position = position;
     }
 
-    public long getId() {
+
+
+    public String getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

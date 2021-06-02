@@ -1,4 +1,4 @@
-package com.yunushaznedar.springtraining.landon.roomwebapp.roomwebapp;
+package com.yunushaznedar.springtraining.landon.roomwebapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

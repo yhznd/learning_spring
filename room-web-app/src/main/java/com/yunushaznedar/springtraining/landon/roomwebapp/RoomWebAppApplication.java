@@ -1,4 +1,4 @@
-package com.yunushaznedar.springtraining.landon.roomwebapp.roomwebapp;
+package com.yunushaznedar.springtraining.landon.roomwebapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

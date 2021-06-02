@@ -1,10 +1,23 @@
-package com.yunushaznedar.springtraining.landon.roomwebapp.roomwebapp.models;
+package com.yunushaznedar.springtraining.landon.roomwebapp.models;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "ROOM")
 public class Room
 {
+    @Id
+    @Column(name = "ROOM_ID")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
+    @Column(name = "NAME")
     private String roomName;
+
+    @Column(name = "ROOM_NUMBER")
     private String roomNumber;
+
+    @Column(name = "BED_INFO")
     private String roomInfo;
 
     public Room() {

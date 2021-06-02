@@ -1,15 +1,10 @@
-package com.yunushaznedar.springtraining.landon.roomwebapp.roomwebapp.controllers;
+package com.yunushaznedar.springtraining.landon.roomwebapp.controllers;
 
-import com.yunushaznedar.springtraining.landon.roomwebapp.roomwebapp.models.Staff;
-import com.yunushaznedar.springtraining.landon.roomwebapp.roomwebapp.service.RoomService;
-import com.yunushaznedar.springtraining.landon.roomwebapp.roomwebapp.service.StaffService;
+import com.yunushaznedar.springtraining.landon.roomwebapp.service.StaffService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Controller
 @RequestMapping("/staffs")
